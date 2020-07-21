@@ -1,5 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-image: url("https://giant.gfycat.com/GenerousBestFireant.webm");
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: rgba(135, 65, 141, 0.5) !important;
 }
 
 .card {
@@ -17,14 +25,146 @@ body {
 }
 
 #kaart1 {
-  background: rgba(250, 212, 20, 0.6);
+  background: rgba(250, 212, 20, 0.7);
+}
+
+#kaart1:hover {
+  background: rgba(250, 212, 20, 0.95);
 }
 
 #kaart2 {
-  background: rgba(250, 147, 20, 0.6);
+  background: rgba(250, 147, 20, 0.7);
+}
+
+#kaart2:hover {
+  background: rgba(250, 147, 20, 0.95);
 }
 
 #kaart3 {
-  background: rgba(135, 25, 252, 0.6);
+  background: rgba(135, 25, 252, 0.7);
+}
+
+#kaart3:hover {
+  background: rgba(135, 25, 252, 0.95);
+}
+
+h2 {
+  margin-top: 5em;
+  margin-bottom: auto;
+  text-align: center;
+  font-family: 'Comfortaa';
+  color: white;
+}
+
+.scrollamaContainer {
+  margin-bottom: 15em;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#pealkiri2 {
+  color: white;
+}
+
+#rida1 {
+  margin-top: 8rem;
+  margin-bottom: 20rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#unLogo {
+  height: 60px;
+  -webkit-filter: contrast(2);
+          filter: contrast(2);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#unLogo:hover {
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.nav-item {
+  font-family: 'Comfortaa';
+  font-size: 1.6em;
+  margin-right: 1em;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.nav-item:hover {
+  font-size: 1.8em;
+}
+
+#navBarCustomization {
+  background-color: rgba(132, 127, 204, 0.9);
+  min-width: 13em;
+}
+
+.dropdown-item {
+  font-family: 'Comfortaa';
+  text-align: center;
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  margin-left: 50%;
+  z-index: 99;
+  font-family: 'Comfortaa';
+  font-size: 1.3em;
+  border: none;
+  outline: none;
+  background-color: rgba(135, 65, 141, 0.4);
+  color: #b1a9a9;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 150px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#myBtn:hover {
+  background-color: rgba(154, 71, 160, 0.7);
+}
+
+.clickablePic {
+  width: 400px;
+}
+
+#img1, #img2, #img3 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+}
+
+.kaardiIframe {
+  font-size: 3em;
+  color: black;
+}
+
+a {
+  font-family: 'Comfortaa';
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,83 +1,90 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
-        <title>Bootstrap 4 Layout</title>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Proovikas</title>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+       
         
         <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
         <link rel="stylesheet" href="/src/css/bootstrap.css">
         <link rel="stylesheet" href="/src/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
 
         <script src="https://unpkg.com/scrollreveal@4"></script>
     </head>
 
     <body>
-        <header>
-            <div class="overlay"></div>
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-              <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+    
+        <button onclick="topFunction()" id="myBtn" title="Go to top">⇧</button>
+
+        
+        <div class="fullscreen-bg">
+            <video autoplay muted loop id="myVideo">
+                <source src="https://giant.gfycat.com/GenerousBestFireant.webm" type="video/mp4">
             </video>
-            <div class="container h-100">
-              <div class="d-flex h-100 text-center align-items-center">
-                <div class="w-100 text-white">
-                  <h1 class="display-3">Video Header</h1>
-                  <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
-                </div>
-              </div>
-            </div>
-          </header>
-
-        <div class ="container">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a class ="navbar-brand" href="index.html">Tutsonid</a>
-
+        </div>
+        
+        <div class="navBar">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navRiba">
+                <a class ="navbar-brand" href="index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/United_Nations_Office_at_Geneva_Logo.svg/1280px-United_Nations_Office_at_Geneva_Logo.svg.png" alt="logo" id="unLogo">
+                </a>
+    
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+    
+                
+           
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Avaleht</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                        <li class="nav-item" id="">
+                            <a class="nav-link" href="https://news.un.org/en/">News</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href ="#" id="navbarDropdown" data-toggle="dropdown">Mängud</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">CS:GO</a>
-                                <a class="dropdown-item" href="#">LoL</a>
-                                <a class="dropdown-item" href="#">Brawlhalla</a>
+                            <a class="nav-link dropdown-toggle" href ="#" id="navbarDropdown" data-toggle="dropdown">Social media</a>
+                            <div class="dropdown-menu" id="navBarCustomization">
+                                <a class="dropdown-item" href="https://twitter.com/UNGeneva?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
+                                <a class="dropdown-item" href="https://www.youtube.com/user/UNinformationGeneva/featured">YouTube</a>
+                                <a class="dropdown-item" href="https://www.facebook.com/UN.Geneva/">Facebook</a>
+                                <a class="dropdown-item" href="https://www.flickr.com/photos/unisgeneva">Flickr</a>
+    
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Mängijad</a>
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            
-            <div class="jumbotron">
-                <h1 class="display-4">Sõbrad, vanad klassivennad, vennad</h1>
-                <p class="lead">Terehrerherhj ksejrh sekjrheskj rheskjr heskjrhesjkrh eskjrheskjrheskjrhhejsk</p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Loe edasi</a>
-                </p>
-            </div>
 
+        </div>
+
+        <div class ="container">
             <div class="row">
-                <div class="col-sm-12 col-md-4">
-                    <div class="card" id="kaart1">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">3D Map</h5>
-                            <p class="card-text">of Geneva
-                            </p>
-                        </div>
-                    </div>
+                <div class= "col">
+                    <h2 id="welcomeText">Welcome to the interactive website about Geneva and its United Nations Office!</h2>
                 </div>
-                <div class="col">
+            </div>
+        </div>
+
+
+
+        <div class ="container" id="container2">
+
+            <div class="row" id= "rida1">
+                <div class="col-sm-12 col-md-4">
+                    <a class="card" id="kaart1" data-fancybox data-type="iframe" data-src="https://www.gvadata.ch/3dmap/" href="javascript:;">
+                        <h5 class="card-title">3D Map</h5>
+                            <p class="card-text">of Geneva</p>
+                    </a>
+                
+                </div>
+                <div class="col-sm-12 col-md-4">
                     <div class="card" id="kaart2">
                         <div class="card-body text-center">
                             <h5 class="card-title">TOP 10</h5>
@@ -87,40 +94,110 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-4">
                     <div class="card" id="kaart3">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Mingi suvaline tekst, mis ei sisalda midagi tartka.
+                            <h5 class="card-title">Info</h5>
+                            <p class="card-text">about the UN
                             </p>
                             
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
+
+        <div class ="container scrollamaContainer">
             <div class="row mt-sm-4 mt-md-0">
-                <div class="col-sm-12 col-md-8">
+                <div class="col-sm-12 col-md-6" id="pealkiri2">
                     <h3>Tähtis pealkiri</h3>
-                    <p class="lead">Sander läks cs-ist erru.</p>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus felis lorem, sit amet consectetur dui hendrerit vel. Curabitur pretium enim risus, at ultrices nisi laoreet in. Nullam semper pharetra nisi, a interdum metus iaculis nec. Vivamus in ex purus. Sed lobortis sed tellus ac placerat. Vivamus et diam augue. Proin ut pulvinar diam, at hendrerit risus. Curabitur gravida, neque non lacinia auctor, turpis ante tincidunt augue, quis porta ipsum mauris ut est. Sed et risus porta, dignissim lectus ut, fringilla arcu.</p>
                 </div>
-                <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-6" id="pealkiri2">
                     <h3>Tähtis pealkiri</h3>
-                    <p class="lead">Sander läks cs-ist erru.</p>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus felis lorem, sit amet consectetur dui hendrerit vel. Curabitur pretium enim risus, at ultrices nisi laoreet in. Nullam semper pharetra nisi, a interdum metus iaculis nec. Vivamus in ex purus. Sed lobortis sed tellus ac placerat. Vivamus et diam augue. Proin ut pulvinar diam, at hendrerit risus. Curabitur gravida, neque non lacinia auctor, turpis ante tincidunt augue, quis porta ipsum mauris ut est. Sed et risus porta, dignissim lectus ut, fringilla arcu.</p>
                 </div>
             </div>
-
         </div>
+
+        <div class="container" id="pictures">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6" id="img1">
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Palace_of_Nations_Geneva_20102014_02.jpg/1920px-Palace_of_Nations_Geneva_20102014_02.jpg" data-fancybox data-caption="The UN building">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Palace_of_Nations_Geneva_20102014_02.jpg/1920px-Palace_of_Nations_Geneva_20102014_02.jpg" class="clickablePic" alt="" />
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-6" id="img2">
+                    <a href="https://webunwto.s3.eu-west-1.amazonaws.com/styles/article_main_image/s3/2020-01/geneva-liaison-office.jpg?itok=TKTtXnXz" data-fancybox data-caption="The flag avenue">
+                        <img src="https://webunwto.s3.eu-west-1.amazonaws.com/styles/article_main_image/s3/2020-01/geneva-liaison-office.jpg?itok=TKTtXnXz" class="clickablePic" alt="" />
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-6" id="img3">
+                    <a href="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzL2UzNTdlNzkxLTI3MWMtNDE2Zi1hZDQ2LTg0OWE2YzU4M2E5ZjZjN2Q1ZmY3MDBkZGFhZDA3Zl9Vbml0ZWRfTmF0aW9uc19DZWlsaW5nXzEuanBnIl0sWyJwIiwiY29udmVydCIsIiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXSxbInAiLCJ0aHVtYiIsIjc4MHg1MjAjIl1d/United_Nations_Ceiling_1.jpg" data-fancybox data-caption="The ceiling within the building">
+                        <img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzL2UzNTdlNzkxLTI3MWMtNDE2Zi1hZDQ2LTg0OWE2YzU4M2E5ZjZjN2Q1ZmY3MDBkZGFhZDA3Zl9Vbml0ZWRfTmF0aW9uc19DZWlsaW5nXzEuanBnIl0sWyJwIiwiY29udmVydCIsIiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXSxbInAiLCJ0aHVtYiIsIjc4MHg1MjAjIl1d/United_Nations_Ceiling_1.jpg"class="clickablePic" alt="" />
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-6" id="img4">
+                    <a data-fancybox data-type="iframe" data-src="https://www.postimees.ee" href="javascript:;">
+                        <img src="https://f10.pmo.ee/LH1_9JHf-9f27c9dCpeCUOXdwYU=/1200x630/https://f.pmo.ee/logos/81/29d686cff7e697efce34903d06614edb.png"class="clickablePic" alt="" />
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
 
 
         <script src="/src/js/jquery.min.js"></script>
         <script src="/src/js/popper.min.js"></script>
         <script src="/src/js/bootstrap.min.js"></script>
+
         <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script src="https://unpkg.com/scrollama"></script>
+ 
+
+        <script src="/src/js/script.js"></script>
+        
+
         <script>
             ScrollReveal().reveal('#kaart1',{ reset: true, delay: 200, duration: 1300, scale:0});
             ScrollReveal().reveal('#kaart2',{ reset: true, delay: 300, duration: 1300, scale:0});
             ScrollReveal().reveal('#kaart3',{ reset: true, delay: 400, duration: 1300, scale:0});
+            ScrollReveal().reveal('#welcomeText',{ reset: true, delay: 200, duration: 500, scale:0});
+
+            ScrollReveal().reveal('#img1',{ reset: true, delay: 400, duration: 1300, scale:0});
+            ScrollReveal().reveal('#img2',{ reset: true, delay: 400, duration: 1300, scale:0});
+            ScrollReveal().reveal('#img3',{ reset: true, delay: 400, duration: 1300, scale:0});
+            ScrollReveal().reveal('#img4',{ reset: true, delay: 400, duration: 1300, scale:0});
+
         </script>
+
+        <script>
+            //Get the button:
+            mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+
+        
     </body>
 </html>
