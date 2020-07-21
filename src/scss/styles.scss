@@ -1,3 +1,26 @@
-.sisu{
-    height: 200vh;
+body{
+    background-image: url("https://giant.gfycat.com/GenerousBestFireant.webm");
+}
+.card{
+    border-radius: 2.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .card-body{
+        font-family: 'Comfortaa';
+    }
+    .card-title{
+        font-size: 3rem;
+    }
+}
+
+#kaart1{
+    background: rgba(250, 212, 20, 0.6);
+}
+
+#kaart2{
+    background: rgba(250, 147, 20, 0.6);
+}
+
+#kaart3{
+    background: rgba(135, 25, 252, 0.6);
 }

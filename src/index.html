@@ -5,11 +5,28 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
         <link rel="stylesheet" href="/src/css/bootstrap.css">
         <link rel="stylesheet" href="/src/css/styles.css">
+
+        <script src="https://unpkg.com/scrollreveal@4"></script>
     </head>
 
     <body>
+        <header>
+            <div class="overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+              <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+            </video>
+            <div class="container h-100">
+              <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                  <h1 class="display-3">Video Header</h1>
+                  <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+                </div>
+              </div>
+            </div>
+          </header>
 
         <div class ="container">
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -52,27 +69,26 @@
 
             <div class="row">
                 <div class="col-sm-12 col-md-4">
-                    <div class="card mb-4">
+                    <div class="card" id="kaart1">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Mingi suvaline tekst, mis ei sisalda midagi tartka.
+                            <h5 class="card-title">3D Map</h5>
+                            <p class="card-text">of Geneva
                             </p>
-
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card" id="kaart2">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Mingi suvaline tekst, mis ei sisalda midagi tartka.
+                            <h5 class="card-title">TOP 10</h5>
+                            <p class="card-text">facts about Geneva
                             </p>
                             
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card" id="kaart3">
                         <div class="card-body text-center">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Mingi suvaline tekst, mis ei sisalda midagi tartka.
@@ -96,12 +112,15 @@
 
         </div>
 
-        
-
-        <div class="sisu"></div>
 
         <script src="/src/js/jquery.min.js"></script>
         <script src="/src/js/popper.min.js"></script>
         <script src="/src/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script>
+            ScrollReveal().reveal('#kaart1',{ reset: true, delay: 200, duration: 1300, scale:0});
+            ScrollReveal().reveal('#kaart2',{ reset: true, delay: 300, duration: 1300, scale:0});
+            ScrollReveal().reveal('#kaart3',{ reset: true, delay: 400, duration: 1300, scale:0});
+        </script>
     </body>
 </html>
