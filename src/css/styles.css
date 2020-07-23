@@ -167,4 +167,16 @@ a:hover {
   color: black;
   text-decoration: none;
 }
+
+img {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 2em;
+}
+
+#gallery {
+  color: white;
+  font-family: 'Comfortaa';
+  margin-bottom: 2em;
+}
 /*# sourceMappingURL=styles.css.map */
